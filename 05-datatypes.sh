@@ -9,8 +9,9 @@ echo "Sum is:$SUM"
 
 #Array
 
-FRUITS=("GUAVA" "APPLE" "BANANA")
-echo "FRUITS ARE ${FRUITS[@]}"
-echo "FIRST FRUIT IS: ${FRUITS[0]}"
-echo "SECOND FRUIT IS: ${FRUITS[1]}"
-echo "THIRD FRUIT IS: ${FRUITS[2]}"
+FRUITS=("APPLE" "GUAVA" "POMO")
+
+echo "FRUITS ARE : ${FRUITS[@]}"
+echo "First Fruit is : ${FRUITS[0]}"
+echo "Second Fruit is : ${FRUITS[1]}"
+echo "Third Fruit is : ${FRUITS[2]}"
