@@ -6,3 +6,9 @@ NUM2=200
 SUM=$(($NUM1+$NUM2))
 
 echo "Sum is:$SUM"
+
+###ARRAY#####
+
+FRUITS=(APPLE,ORANGE,BANANA)
+echo ("FRUITS ARE AS :$FRUITS[@]")
+
