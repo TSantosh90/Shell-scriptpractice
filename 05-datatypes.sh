@@ -7,8 +7,10 @@ SUM=$(($NUM1+$NUM2))
 
 echo "Sum is:$SUM"
 
-###ARRAY#####
+#Array
 
-FRUITS=(APPLE,ORANGE,BANANA)
-echo "FRUITS ARE:${FRUITS[@]}"
-
+FRUITS=(GUAVA,APPLE,BANANA)
+echo "FRUITS ARE ${FRUITS[@]}"
+echo "FIRST FRUIT IS ${FRUITS[0]}"
+echo "SECOND FRUIT IS ${FRUITS[1]}"
+echo "THIRD FRUIT IS ${FRUITS[2]}"
