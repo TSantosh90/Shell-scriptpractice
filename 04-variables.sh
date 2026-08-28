@@ -1,5 +1,9 @@
 #!/bin/bash
 
-START_TIME=$(date)
+START_TIME=$(date +%s)
 
-echo "Please letme know the date : $START_TIME"
+END_TIME=$(date +%s)
+
+DIFF = ($END_TIME-$START_TIME)
+
+echo "Please let me know the date : $DIFF"
