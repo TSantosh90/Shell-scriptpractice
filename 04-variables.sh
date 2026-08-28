@@ -6,6 +6,6 @@ sleep 10
 
 END_TIME=$(date +%s)
 
-TIME_PERIOD = $(($END_TIME-$START_TIME))
+TOTAL_TIME = $(($END_TIME-$START_TIME))
 
-echo "Please let me know: $TIME_PERIOD"
+echo "SCRIPT EXECUTED IN: $TOTAL_TIME"
