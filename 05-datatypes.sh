@@ -10,5 +10,5 @@ echo "Sum is:$SUM"
 ###ARRAY#####
 
 FRUITS=(APPLE,ORANGE,BANANA)
-echo ("FRUITS ARE AS :$FRUITS[@]")
+echo "FRUITS ARE:${FRUITS[@]}"
 
