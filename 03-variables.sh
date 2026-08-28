@@ -3,4 +3,7 @@
 echo "Please enter your username::"
 read  USER_NAME
 
-echo "My name is $USER_NAME"
+echo "Please enter your password::"
+read  -s password
+
+echo "My password is $password"
