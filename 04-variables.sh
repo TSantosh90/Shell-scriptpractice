@@ -2,8 +2,10 @@
 
 START_TIME=$(date +%s)
 
+sleep 10
+
 END_TIME=$(date +%s)
 
-DIFF = (($END_TIME-$START_TIME))
+TIME_PERIOD = $(($END_TIME-$START_TIME))
 
-echo "Please let me know the date : $DIFF"
+echo "Please let me know: $TIME_PERIOD"
