@@ -1,11 +1,15 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGS_FOLDER="/var/log/Shell-scriptpractice"
+LOGS_FILE="/var/log/Shell-scriptpractice/$0.log"
 
 if [ $USERID -ne 0 ]; then
     echo "Please run with sudo access"
     exit 1 
 fi
+
+mkdir -p $LOGS_FOLDER
 ##Function name ###
 VALIDATE(){
 if [ $1 -ne 0 ]; then
@@ -16,11 +20,11 @@ echo "$2...Success"
 fi
 }
 
-dnf install nginx -y
+dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "Installing Nginx"
 
-dnf install mysql -y
+dnf install mysql -y &>> $LOGS_FILE
 VALIDATE $? "Installing Mysql"
 
-dnf install nodejs -y
+dnf install nodejs -y &>> $LOGS_FILE
 VALIDATE $? "Installing nodejs"
