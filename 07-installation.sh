@@ -18,13 +18,13 @@ echo "Installing nginx...Success"
 fi
 
 echo "Installing Mysql"
-dnf install Mysql -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing Mysql....failure"
+    echo "Installing mysql....failure"
     exit 1 
 else
-echo "Installing Mysql...Success"
+echo "Installing mysql...Success"
 fi
 
 echo "Installing node.js"
