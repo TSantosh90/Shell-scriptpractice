@@ -23,5 +23,5 @@ fi
 for package in $@
 do
     dnf install $package -y
-    VALIDATE $? "$package Installation"
+    VALIDATE $? "$package Installation" &>> $LOGS_FILE
 done
