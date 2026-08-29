@@ -22,6 +22,11 @@ fi
 
 for package in $@
 do
-    dnf install $package -y
-    VALIDATE $? "$package Installation" &>>$LOGS_FILE
+    dnf installed $package &>>$LOGS_FILE
+    if [ $? -ne 0 ]; then
+        echo "$package is not installed, installing now"
+        dnf install $package -y &>>$LOGS_FILE
+        VALIDATE $? "$package Installation" 
+    else
+        echo "$package already installed, skip it"
 done
