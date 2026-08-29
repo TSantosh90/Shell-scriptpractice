@@ -5,7 +5,7 @@ LOGS_FOLDER="/var/log/Shell-scriptpractice"
 LOGS_FILE="/var/log/Shell-scriptpractice/$0.log"
 
 if [ $USERID -ne 0 ]; then
-    echo "Please run with sudo access" | tee $LOGS_FILE
+    echo "Please run with sudo access" 
     exit 1 
 fi
 
@@ -13,10 +13,10 @@ mkdir -p $LOGS_FOLDER
 ##Function name ###
 VALIDATE(){
 if [ $1 -ne 0 ]; then
-    echo "$2....failure" | tee $LOGS_FILE
+    echo "$2....failure"
     exit 1 
 else
-echo "$2...Success" | tee $LOGS_FILE
+echo "$2...Success" 
 fi
 }
 
